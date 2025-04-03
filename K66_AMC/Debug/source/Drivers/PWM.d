@@ -1,0 +1,33 @@
+source/Drivers/PWM.o source/Drivers/PWM.d: ../source/Drivers/PWM.c \
+ ../source/Drivers/PWM.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/device/MK66F18.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/CMSIS/core_cm4.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/CMSIS/cmsis_version.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/CMSIS/cmsis_compiler.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/CMSIS/cmsis_gcc.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/device/system_MK66F18.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_ftm.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_common.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/device/fsl_device_registers.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/device/MK66F18.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/device/MK66F18_features.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_common_arm.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_clock.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_port.h \
+ /home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_clock.h
+../source/Drivers/PWM.h:
+/home/kenneth/Robotica/AUTOMODELCAR/device/MK66F18.h:
+/home/kenneth/Robotica/AUTOMODELCAR/CMSIS/core_cm4.h:
+/home/kenneth/Robotica/AUTOMODELCAR/CMSIS/cmsis_version.h:
+/home/kenneth/Robotica/AUTOMODELCAR/CMSIS/cmsis_compiler.h:
+/home/kenneth/Robotica/AUTOMODELCAR/CMSIS/cmsis_gcc.h:
+/home/kenneth/Robotica/AUTOMODELCAR/device/system_MK66F18.h:
+/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_ftm.h:
+/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_common.h:
+/home/kenneth/Robotica/AUTOMODELCAR/device/fsl_device_registers.h:
+/home/kenneth/Robotica/AUTOMODELCAR/device/MK66F18.h:
+/home/kenneth/Robotica/AUTOMODELCAR/device/MK66F18_features.h:
+/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_common_arm.h:
+/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_clock.h:
+/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_port.h:
+/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_clock.h:

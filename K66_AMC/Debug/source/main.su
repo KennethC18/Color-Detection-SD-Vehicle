@@ -1,0 +1,6 @@
+../source/main.c:51:5:main	16	static
+../source/main.c:66:6:Driver_Init	8	static
+../source/main.c:74:6:Drive_MotorsOff	8	static
+../source/main.c:79:13:DriveMode_Auto	16	static
+../source/main.c:95:13:DriveMode_Manual	16	static
+../source/main.c:123:13:DriveMode_Check	24	static

@@ -1,0 +1,4 @@
+../source/Drivers/GPS.c:39:6:GPS_InitWaypoints	4	static
+../source/Drivers/GPS.c:88:6:GPS_Parser	16	static
+../source/Drivers/GPS.c:194:6:GPS_Format	72	static
+../source/Drivers/GPS.c:233:6:GPS_FixCoordinates	48	static

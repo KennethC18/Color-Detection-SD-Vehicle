@@ -1,0 +1,3 @@
+../source/Drivers/TELEMETRY.c:29:6:Telemetry_Start	8	static
+../source/Drivers/TELEMETRY.c:33:6:Telemetry_TX_Msg	24	static
+../source/Drivers/TELEMETRY.c:79:6:StatusDisplay	16	static

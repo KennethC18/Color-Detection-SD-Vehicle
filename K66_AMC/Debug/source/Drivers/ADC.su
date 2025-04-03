@@ -1,0 +1,4 @@
+/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_adc16.h:367:20:ADC16_EnableHardwareTrigger	16	static
+/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_adc16.h:491:24:ADC16_GetChannelConversionValue	16	static
+../source/Drivers/ADC.c:18:6:ADC_Start	8	static
+../source/Drivers/ADC.c:46:10:ADC_GetValue	8	static
