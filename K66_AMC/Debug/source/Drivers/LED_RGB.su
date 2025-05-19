@@ -1,6 +1,6 @@
-/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_clock.h:725:20:CLOCK_EnableClock	24	static
-/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_gpio.h:162:20:GPIO_PinWrite	24	static
-/home/kenneth/Robotica/AUTOMODELCAR/drivers/fsl_port.h:374:20:PORT_SetPinMux	24	static
+/home/kenneth/Robotica/AUTOMODELCAR/K66_AMC/drivers/fsl_clock.h:725:20:CLOCK_EnableClock	24	static
+/home/kenneth/Robotica/AUTOMODELCAR/K66_AMC/drivers/fsl_gpio.h:162:20:GPIO_PinWrite	24	static
+/home/kenneth/Robotica/AUTOMODELCAR/K66_AMC/drivers/fsl_port.h:374:20:PORT_SetPinMux	24	static
 ../source/Drivers/LED_RGB.c:12:6:LED_Init	16	static
 ../source/Drivers/LED_RGB.c:34:6:LED_OFF	8	static
 ../source/Drivers/LED_RGB.c:43:6:RED_LED	8	static

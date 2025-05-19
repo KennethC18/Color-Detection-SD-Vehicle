@@ -1,6 +1,10 @@
-../source/main.c:51:5:main	16	static
-../source/main.c:66:6:Driver_Init	8	static
-../source/main.c:74:6:Drive_MotorsOff	8	static
-../source/main.c:79:13:DriveMode_Auto	16	static
-../source/main.c:95:13:DriveMode_Manual	16	static
-../source/main.c:123:13:DriveMode_Check	24	static
+../source/main.c:81:7:sin_q15	40	static
+../source/main.c:126:5:main	16	static
+../source/main.c:143:6:Driver_Init	8	static
+../source/main.c:153:6:Drive_MotorsOff	8	static
+../source/main.c:158:6:BNO055_Init	16	static
+../source/main.c:183:6:BNO055_ReadEulerAngles	32	static
+../source/main.c:206:13:BNO055_RefreshTask	8	static
+../source/main.c:214:13:DriveMode_Auto	16	static
+../source/main.c:270:13:DriveMode_Manual	8	static
+../source/main.c:296:13:DriveMode_Check	16	static

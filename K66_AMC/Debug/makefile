@@ -21,6 +21,16 @@ RM := rm -rf
 -include component/serial_manager/subdir.mk
 -include component/lists/subdir.mk
 -include board/subdir.mk
+-include CMSIS/DSP/Source/TransformFunctions/subdir.mk
+-include CMSIS/DSP/Source/SupportFunctions/subdir.mk
+-include CMSIS/DSP/Source/StatisticsFunctions/subdir.mk
+-include CMSIS/DSP/Source/MatrixFunctions/subdir.mk
+-include CMSIS/DSP/Source/FilteringFunctions/subdir.mk
+-include CMSIS/DSP/Source/FastMathFunctions/subdir.mk
+-include CMSIS/DSP/Source/ControllerFunctions/subdir.mk
+-include CMSIS/DSP/Source/ComplexMathFunctions/subdir.mk
+-include CMSIS/DSP/Source/CommonTables/subdir.mk
+-include CMSIS/DSP/Source/BasicMathFunctions/subdir.mk
 ifneq ($(MAKECMDGOALS),clean)
 ifneq ($(strip $(C_DEPS)),)
 -include $(C_DEPS)
@@ -35,7 +45,7 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := AUTOMODELCAR
+BUILD_ARTIFACT_NAME := K66_AMC
 BUILD_ARTIFACT_EXTENSION := axf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
@@ -47,24 +57,24 @@ all:
 	+@$(MAKE) --no-print-directory main-build && $(MAKE) --no-print-directory post-build
 
 # Main-build Target
-main-build: AUTOMODELCAR.axf
+main-build: K66_AMC.axf
 
 # Tool invocations
-AUTOMODELCAR.axf: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
+K66_AMC.axf: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -Xlinker -Map="AUTOMODELCAR.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T AUTOMODELCAR_Debug.ld -o "AUTOMODELCAR.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -L"/home/kenneth/Robotica/AUTOMODELCAR/K66_AMC/CMSIS/DSP" -Xlinker -Map="K66_AMC.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -T K66_AMC_Debug.ld -o "K66_AMC.axf" $(OBJS) $(USER_OBJS) $(LIBS) -larm_cortexM4lf_math
 	@echo 'Finished building target: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) AUTOMODELCAR.axf
+	-$(RM) K66_AMC.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "AUTOMODELCAR.axf"; # arm-none-eabi-objcopy -v -O binary "AUTOMODELCAR.axf" "AUTOMODELCAR.bin" ; # checksum -p MK66FN2M0xxx18 -d "AUTOMODELCAR.bin";
+	-arm-none-eabi-size "K66_AMC.axf"; # arm-none-eabi-objcopy -v -O binary "K66_AMC.axf" "K66_AMC.bin" ; # checksum -p MK66FN2M0xxx18 -d "K66_AMC.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents main-build post-build

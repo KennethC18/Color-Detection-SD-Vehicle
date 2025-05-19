@@ -31,11 +31,12 @@
 #define UART2_IRQHandler UART2_RX_TX_IRQHandler
 
 #define BUFFER_SIZE      16
+#define CAM_BUFFER_SIZE  3
 
 extern volatile uint8_t UART_Active;
 
 extern volatile uint8_t RCBuffer[BUFFER_SIZE];
-extern volatile uint8_t UART4Data;
+extern volatile uint8_t CAMBuffer[CAM_BUFFER_SIZE];
 
 /*******************************************************************************
  * Prototypes
